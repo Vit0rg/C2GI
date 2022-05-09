@@ -1,0 +1,139 @@
+*, ::after, ::before
+{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body
+{
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 40%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header
+{
+  width: 100%;
+  padding-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 5%);
+}
+
+header #title_toggle
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #title_toggle h1
+{
+  padding: .75rem;
+  font-size: 2.75rem;
+}
+
+header #title_toggle button
+{
+  width: 2.75rem;
+  padding: .2rem;
+  font-size: 2rem;
+}
+
+
+header #searchbar
+{
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 25%);
+}
+
+header #searchbar input,
+header button,
+iframe
+{
+  border-radius: .5rem;
+}
+
+header #searchbar input
+{
+  height: 60%;
+  width: 75%;
+  padding: 0 1vw;
+  font-size: 1.5rem;
+  border: solid .15rem hsl(0, 0%, 10%);
+}
+
+button
+{
+  margin-left: 1vw;
+  background-color: hsl(125, 100%, 20%);
+  border: solid .2rem hsl(125, 80%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+header #searchbar button
+{
+  height: 65%;
+  width: 3.5rem;
+  font-size: 1.5rem;
+}
+
+header button:hover
+{
+  background-color: hsl(125, 100%, 55%);
+  border-color: hsl(125, 80%, 45%);
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+header button:active
+{
+  background-color: hsl(125, 100%, 30%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(125, 80%, 20%);
+}
+
+.container
+{
+  margin-top: 2%;
+  width: 80%;
+}
+
+iframe
+{
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: hsl(0, 0%, 0%);
+  box-shadow: .4rem .4rem hsl(0, 0%, 10%);
+}
+
+footer
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, hsl(0, 0%, 10%, 1%), hsl(0, 0%, 5%, 100%));
+  color: hsl(0, 0%, 40%);
+}
+
+.hidden
+{
+  display: none !important;
+}
